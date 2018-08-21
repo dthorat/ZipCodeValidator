@@ -1,7 +1,6 @@
 package com.demo.zipcode.utils;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 import com.demo.zipcode.domain.Zipcode;
@@ -43,7 +42,7 @@ public class ZipcodeUtil {
 	}
 	
 	public List<Zipcode> getValidSolution(List<Zipcode> zipCodeList){
-		List<Zipcode> outputList = new LinkedList<Zipcode>();
+		List<Zipcode> outputList = new ArrayList<Zipcode>();
 		Zipcode zipCode = null;
 		if (null != zipCodeList) {
 			for (Zipcode zip : zipCodeList) {
