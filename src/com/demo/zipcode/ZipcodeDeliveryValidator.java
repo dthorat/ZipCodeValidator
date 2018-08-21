@@ -15,8 +15,7 @@ public class ZipcodeDeliveryValidator {
 
 		ZipcodeUtil zipCodeUtil = new ZipcodeUtil(zipCodes);
 		List<Zipcode> zipCodeList = zipCodeUtil.validateZipCode();
-		ZipcodeComparator zipCodeComparator = new ZipcodeComparator();
-		Collections.sort(zipCodeList, zipCodeComparator);
+		Collections.sort(zipCodeList, new ZipcodeComparator());
 
 		List<Zipcode> outputList = zipCodeUtil.getValidSolution(zipCodeList);
 
